@@ -1,0 +1,53 @@
+Credentials on daruwin.com:
+portal.git.developer@daruwin.com
+@,2#][K9ff=%
+
+Credentials on Github:
+@PortalGitDeveloperForDaruwin
+portal.git.developer@daruwin.com
+@,2#][K9ff=%
+
+===============================
+Settings for Github Integration
+===============================
+
+On Eclipse IDE:
+	Preferences > Team > Git > Configuration
+	Add a new entry and enter the key value pairs:
+		user.email = portal.git.developer@daruwin.com
+		user.name = Portal Git Developer For Daruwin
+		
+On Windows 7 OS:
+	Validate you have set the environment variable HOME, if not:
+		Add the environment variable HOME to your environment variables.
+		Open the START menu:
+			Select "Edit environment variables for your account".
+			Under "User Variables", click the "New" button.
+			Enter "HOME" in the name field.
+			Enter "%USERPROFILE%" or some other path in the value field.
+			Click OK, and OK again. You have just added the Home directory on Windows.
+			File > Exit, then restart the system.
+
+On Eclipse IDE:
+	Validate Eclipse IDE is pointing to Git application (you should have installed Git on Windows OS before):
+		Team > Git > Configuration and then the System Settings tab.
+	If not: browse and set the path to Git application (C:\Program Files(x86)\Git)
+	
+On Eclipse IDE: 
+	Create repository:
+		Select the project, right click > Team > Share Project
+		Check "Use or create repository in parent folder of project"
+		Configure the Git repository: Select the project > Create Repository > Finish
+	Track Changes
+		Select the project, right click > Team > Add to Index
+		* The + decorators show that now the project's files have been added to version control.
+		*1 Mark a folder as "ignored by Git", either by right-clicking on it and selecting Team > Ignore 
+		*2 or by creating a file ".gitignore" in the project folder. For commenting use #: #.env , #/vendor
+	Commit
+		Select the project, right click > Team > Commit in the project context menu.
+		Enter a commit message explaining your change
+		* The first line (followed by an empty line) will become the short log for this commit. 
+		* By default the author and committer are taken from the ".gitconfig" file in your home directory.
+		Click Commit to commit your first change.
+		Note that the decorators of the committed files have changed as a result of your commit.
+		
