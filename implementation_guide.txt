@@ -1,12 +1,3 @@
-Credentials on daruwin.com:
-portal.git.developer@daruwin.com
-@,2#][K9ff=%
-
-Credentials on Github:
-@PortalGitDeveloperForDaruwin
-portal.git.developer@daruwin.com
-@,2#][K9ff=%
-
 ===============================
 Settings for Github Integration
 ===============================
@@ -44,10 +35,18 @@ On Eclipse IDE:
 		*1 Mark a folder as "ignored by Git", either by right-clicking on it and selecting Team > Ignore 
 		*2 or by creating a file ".gitignore" in the project folder. For commenting use #: #.env , #/vendor
 	Commit
-		Select the project, right click > Team > Commit in the project context menu.
+		Select the project, right click > Team > Commit
 		Enter a commit message explaining your change
 		* The first line (followed by an empty line) will become the short log for this commit. 
 		* By default the author and committer are taken from the ".gitconfig" file in your home directory.
-		Click Commit to commit your first change.
-		Note that the decorators of the committed files have changed as a result of your commit.
-		
+		Click on Commit to commit your first change.
+		* Note that the decorators of the committed files have changed as a result of your commit.
+	Update
+		Customize welcome.blade.php
+		Add it to version control following "Track Changes" steps (line 41)
+		Commit your changes (line 46) 
+		* "Stages Changes" panel shows the updated files in the project
+		* To check history: Team > Show in History (It should show the new commits)
+		* Click the "Compare Mode" toggle button in the History View.
+		* Double click on "welcome.blade.php" in the Resource list of the History View to open your last committed change in the Compare View.
+	
